@@ -1,8 +1,29 @@
 <app-header></app-header>
 
 <div class="container">
-	<app-hamster-card></app-hamster-card>
-	<app-hamster-card></app-hamster-card>
-	<app-hamster-card></app-hamster-card>
-	<app-hamster-card></app-hamster-card>
+	<app-hamster-card 
+		*ngFor="let i of [0, 1, 2, 3]"
+		[img]="postImages[i]"
+		[text]="postTexts[i]"
+	></app-hamster-card>
+
+	<!-- <app-hamster-card 
+		[img]="postImages[0]"
+		[text]="postTexts[0]">
+	</app-hamster-card>
+	<app-hamster-card
+		[img]="postImages[1]"
+		[text]="postTexts[1]">
+	</app-hamster-card>
+	<app-hamster-card 
+		[img]="postImages[2]"
+		[text]="postTexts[2]">
+	</app-hamster-card>
+	<app-hamster-card 
+		[img]="postImages[3]"
+		[text]="postTexts[3]">
+	</app-hamster-card> -->
 </div>
+
+<app-proposals></app-proposals>
+
