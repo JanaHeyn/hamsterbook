@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HamsterCardComponent } from './hamster-card/hamster-card.component';
 import { ProposalsComponent } from './proposals/proposals.component';
+import { ProfileRowComponent } from './profile-row/profile-row.component';
+import { FriendBoxComponent } from './friend-box/friend-box.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HamsterCardComponent,
-    ProposalsComponent
+    ProposalsComponent,
+    ProfileRowComponent,
+    FriendBoxComponent
   ],
   imports: [
     BrowserModule,

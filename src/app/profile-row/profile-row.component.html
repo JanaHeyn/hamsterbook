@@ -1,0 +1,16 @@
+<div class="profile-row margin-bottom-16">
+    <!-- Variabeln, die von der übergeordneten Komp übergegeben werden -->
+    <!-- von proposals zu profile-row übergeben: img, name, des -->
+
+    <img src="{{ img }}">
+
+    <div class="name">
+        <b>{{ name }}</b>
+        <br>
+        <span class="des">{{ des }}</span>
+    </div>
+
+    <!-- und hier fügen wir mit einem click event, die Methode addFriend() aus dem friend service ein  -->
+    <!-- so werden mit jedem click auf folgen die freund in die friend-box hinzugefügt -->
+    <a *ngIf="canFollow" (click)="fs.addFriend(name, des, img); canFollow=false">Folgen</a>
+</div>

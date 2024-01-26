@@ -1,0 +1,18 @@
+<div class="standard-card padding-16 friendrow">
+
+    <div *ngIf="fs.names.length === 0">
+        Du hast keine Freunde 🐹
+    </div>
+
+
+
+    <!-- In einer Schleife kann man auch eine zweite Definition machen, zb für eine index variable, die den wert 0,1,2 usw hat -->
+    <!-- die verschiedenen Definitionen werden mit einem Semicolon voneinander getrennt  -->
+    <div 
+        class="friend" 
+        *ngFor="let name of fs.names; let i = index ">
+        
+        <!-- um nun die Daten aus dem friend Service zu nutzen, muss hier auf den vergeben Namen, fs, verwiesen werden und dann entsprechend auf das Array< -->
+        <img src="{{ fs.images[i] }}"> {{ name }}
+    </div>
+</div>

@@ -1,1 +1,18 @@
-<p>proposals works!</p>
+<!-- Damit ich mir nicht selber folgen kann, wir hier die property canFoloow auf false gesetzt -->
+<app-profile-row [canFollow]="false"></app-profile-row>
+
+<div class="margin-bottom-16">
+    <b>Freundesvorschläge</b>
+</div>
+
+<!-- alles vor dem = wird an untergeordnete Komp übergeben -->
+<!-- [img] [name] [des] von proposals an profile-row -->
+<!-- die daten aus den jeweiligen arrays images, names und texts stammen aus der proposals comp, weil sie hier bestimmt wurden -->
+<app-profile-row
+    *ngFor="let i of [0, 1, 2, 3]"
+    [img]="images[i]"
+    [name]="names[i]"
+    [des]="texts[i]"
+    >
+
+</app-profile-row>

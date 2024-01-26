@@ -5,3 +5,20 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
     font-family: 'Lato', sans-serif;
 }
+
+.margin-bottom-16 {
+    margin-bottom: 16px;
+}
+
+.padding-16 {
+    padding: 16px;
+}
+
+.standard-card {
+    width: 400px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    margin-bottom: 32px;
+    box-sizing: border-box;
+}
